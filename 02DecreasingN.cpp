@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void printN(int i, int N){
+    if(i > N) return; 
+    printN(i+1,N);
+    cout<<i<<"\n";
+}
+
+int main(){
+    int n;
+    cout<<"Enter value of n: ";
+    cin>>n;
+    printN(1,n);
+}
